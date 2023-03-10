@@ -19,7 +19,8 @@
 
                         <td>
                             <a href="{{ route('villes.edit', $ville) }}" class="btn btn-warning btn-sm">Editer</a>
-                            
+                            <a href="{{ route('villes.show', $ville) }}" class="btn btn-info btn-sm">show</a>
+
                         </td>
                     </tr>
                 @endforeach

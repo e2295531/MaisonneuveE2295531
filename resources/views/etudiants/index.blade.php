@@ -27,6 +27,8 @@
                         <td>{{ $etudiant->ville->nom }}</td>
                         <td>
                             <a href="{{ route('etudiants.edit', $etudiant) }}" class="btn btn-warning btn-sm">Editer</a>
+                            <a href="{{ route('etudiants.show', $etudiant) }}" class="btn btn-info btn-sm">show</a>
+
                             <form action="{{ route('etudiants.destroy', $etudiant) }}" method="post" style="display:inline">
                                 @csrf
                                 @method('DELETE')
